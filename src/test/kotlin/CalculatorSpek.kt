@@ -8,6 +8,7 @@ class CalculatorSpek {
         val actual = calculator.add(12, 13)
         assertEquals(25, actual)
     }
+
 }
 
 

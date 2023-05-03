@@ -1,7 +1,8 @@
 //Strategy pattern - chose the location to output to when we run the code
 class Calculator(output:Result) {
+    var total= 0
     fun add(a: Int, b: Int): Int {
-        return 0
+        return a + b
     }
     //when it wants to output a result, it can output through interface
 }
