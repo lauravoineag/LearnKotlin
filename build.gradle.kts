@@ -11,7 +11,10 @@ repositories {
 }
 
 dependencies {
+    testImplementation("org.spekframework.spek2:spek-dsl:2.0.18")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testImplementation(kotlin("test"))
+    testRuntimeOnly ("org.spekframework.spek2:spek-runner-junit5:2.0.18")
 }
 
 tasks.test {
