@@ -6,12 +6,13 @@ fun main(args:Array<String>){
     val h4 = h1 add h2
     println(h4.Name)
 
-
+    val h5 = h1 + h2
+    println(h5.Name)
 }
 
 class Header(var Name:String){}
 
-fun Header.plus(other:Header):Header{ //extension method
+operator fun Header.plus(other:Header):Header{ //extension method /operator overloading - I can use the plus symbol rather than name plus or add or put together
     return Header(this.Name + other.Name)
 }
 infix fun Header.add(other:Header):Header { //using infix
