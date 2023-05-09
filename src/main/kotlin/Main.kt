@@ -18,7 +18,7 @@ open class Person (val name:String, var age:Int, var isMarried: Boolean = false)
             p.sign()
             p.age = 36
             p.sign()
-            val kevin = User("Kevin",1);
+            val kevin = User("Kevin",1)
             println(kevin)//data class - calls the toString to Kevin - prints out identifier for Kevin
             val(name,id)=kevin
             println("User is $name and has $id")//data class - deconstruction
