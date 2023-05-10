@@ -10,7 +10,7 @@ object Courses{
     }
 }
 
-class Gakusei(){
+class Gakusei(){ 
     fun enrole(courseName:String){
         var course = Courses.allCourses //go to allCourses singleton use its allCourses property
             .filter {it.title == courseName}//look for a course with courseName
